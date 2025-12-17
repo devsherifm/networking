@@ -1,0 +1,29 @@
+---
+name: multicast_01
+
+mgmt:
+  network: mgmt
+  ipv4-subnet: 192.168.100.0/24
+
+topology:
+  nodes:
+    iol-1:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.12.01
+      mgmt-ipv4: 192.168.100.31
+
+    iol-2:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.12.01
+      mgmt-ipv4: 192.168.100.32
+
+    iol-3:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:l2-17.12.01
+      type: l2
+      mgmt-ipv4: 192.168.100.40
+
+  links:
+    - endpoints: ["iol-1:Ethernet0/1", "iol-2:Ethernet0/1"]
+    - endpoints: ["iol-2:Ethernet0/2", "iol-3:Ethernet0/1"]
+    - endpoints: ["iol-3:Ethernet0/2", "iol-1:Ethernet0/2"]
