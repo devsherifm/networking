@@ -20,7 +20,7 @@
 ## LAB Set up
 
 Please refer my linkedin post for more infomration <br>
-[Visit My_Linkedin](https://www.linkedin.com/posts/mohammed-sherif-m)
+[Visit My_Linkedin](https://in.linkedin.com/in/mohammed-sherif-m)
 
 ### use below command to deply the toplogy
 
