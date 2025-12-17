@@ -16,3 +16,34 @@
 │                         │ vrnetlab/cisco_iol:l2-17.12.01 │         │ N/A            │
 ╰─────────────────────────┴────────────────────────────────┴─────────┴────────────────╯
 ```
+
+## LAB Set up
+
+Please refer my linkedin post for more infomration
+
+### use below command to deply the toplogy
+
+```bash
+clab deploy -t cisco_iol_intr_connect.clab.yml
+```
+
+### use below command to view the toplogy info
+
+```bash
+clab inspect -t cisco_iol_intr_connect.clab.yml
+```
+
+### use below command to view the toplogy diagram in broswer
+
+```bash
+(pytest) kali@ubuntu:~/clab/vrnetlab/cisco/iol$ clab graph -t cisco_iol_intr_connect.clab.yml
+15:31:39 INFO Parsing & checking topology file=cisco_iol_intr_connect.clab.yml
+15:31:39 INFO Serving topology graph
+  addresses=
+  │   http://10.0.xx.15:50080
+  │   http://192.168.xx.101:50080
+  │   http://192.168.xx.1:50080
+  │   http://172.xx.xx.1:50080
+```
+
+
