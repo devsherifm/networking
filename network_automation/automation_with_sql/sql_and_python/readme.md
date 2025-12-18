@@ -104,6 +104,7 @@ Create table:
 ```sql
 CREATE TABLE script_execution_log (
     id SERIAL PRIMARY KEY,
+    host INET NOT NULL,
     username TEXT NOT NULL,
     script_name TEXT NOT NULL,
     execution_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
